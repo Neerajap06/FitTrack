@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitTrack - Daily Fitness & Water Intake Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>FitTrack Dashboard</h1>
+      </header>
+
+      <section class="fitness-section">
+        <div class="fitness-card">
+          <!-- Fitness Icon with URL -->
+          <img
+            src="https://i.imgur.com/exampleFitnessIcon.png"
+            alt="Fitness Icon"
+          />
+          <h2>Fitness Activity</h2>
+          <input type="number" id="fitnessInput" placeholder="Enter steps" />
+          <button id="addFitnessBtn">Add Fitness</button>
+          <p>Total Fitness: <span id="fitnessTotal">0</span> steps</p>
+        </div>
+      </section>
+
+      <section class="water-section">
+        <div class="water-card">
+          <!-- Water Icon with URL -->
+          <img
+            src="https://i.imgur.com/exampleWaterIcon.png"
+            alt="Water Icon"
+          />
+          <h2>Water Intake</h2>
+          <input
+            type="number"
+            id="waterInput"
+            placeholder="Enter water in mL"
+          />
+          <button id="addWaterBtn">Add Water</button>
+          <p>Total Water Intake: <span id="waterTotal">0</span> mL</p>
+        </div>
+      </section>
+
+      <footer>
+        <p>Created with ❤️ by FitTrack</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
